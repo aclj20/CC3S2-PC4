@@ -25,4 +25,12 @@
   PR: #12
 
 ## Sprint 3 - 
+- 2025-06-29: Implementé un flujo de liberación local mediante un script Bash `release_flow.sh` que automatiza la generación del changelog, el cálculo de la siguiente versión, la creación y push del nuevo tag. Además, añadí lógica para detectar si no existen commits nuevos desde el último tag y manejar este caso apropiadamente. También documenté el uso del nuevo script y agregué comentarios explicativos en ambos scripts `release_flow.sh` y `changelog_generator.py`.
 
+  Commits:
+  - fix(scripts): manejar correctamente caso sin commits nuevos desde el último tag
+  - feat(scripts): agregar script de flujo de liberación local con push de tag
+  - doc(scripts): agregar documentación de uso de release_flow.sh
+  - chore(scripts): agregar comentarios a release_flow.sh y changelog_generator.py
+
+  PR: #17
