@@ -13,7 +13,16 @@
   PR: #3
 
 
-## Sprint 2 -
+## Sprint 2 - Generación de CHANGELOG y versionado semántico
+- 2025-06-28: Extendí el script `changelog_generator.py` para generar automáticamente un archivo `CHANGELOG.md` en formato Markdown, agrupando los commits por tipo (`feat`, `fix`, etc.). Además, implementé la lógica para calcular la siguiente versión siguiendo el esquema de versionado semántico (`MAJOR.MINOR.PATCH`) a partir del último tag. El script también crea un nuevo tag Git local con la versión calculada.
+
+  Commits:
+  - feat(scripts): extender script para generar archivo CHANGELOG.md automáticamente
+  - feat(scripts): detectar y clasificar commits BREAKINGCHANGE
+  - feat(scripts): generar tag semántico a partir de commits desde el último tag
+  - docs(scripts): agregar documentación sobre generación de changelog y tags
+
+  PR: #12
 
 ## Sprint 3 - 
 
